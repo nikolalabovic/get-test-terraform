@@ -1,5 +1,5 @@
-name: Terraform Plan
-run-name: Terraform Plan
+name: Terraform Apply
+run-name: Terraform Apply
 on:
   workflow_dispatch:
 
@@ -20,5 +20,5 @@ jobs:
       - name: Terraform init
         run: terraform init
 
-      - name: Terraform Plan
-        run: terraform plan
+      - name: Terraform Apply
+        run: terraform apply -auto-approve
